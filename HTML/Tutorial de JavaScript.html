@@ -1,0 +1,146 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="../CSS/Tutorial de javascript.css">
+<title>Tutorial de JavaScript desde 0</title>
+</head>
+<body bgcolor="#A5D0D5">
+
+<basefont color="#000000" face="Arial" size="1">
+<body>
+<h1>Tutorial de JavaScript desde 0</h1>
+<div id="nav">
+<ul class="menu">
+<li><a href="../INDEX.html">Inicio</a></li>
+<li><a href="Historia de JavaScript.html">Historia de JavaScript</a></li>
+<li><a href="Cómo agregas JavaScript a tu página.html">¿Cómo agregas JavaScript a tu página?</a></li>
+<li><a href="Tutorial de JavaScript.html">Tutorial de JavaScript</a></li>
+<li><a href="Los mejores de cursos de JavaScript.html">Los mejores cursos de JavaScript en YouTube</a></li>
+<li><a href="Contactanos.html">Contactanos</a></li>
+</ul>
+  </div>
+<h2>Operadores relacionales</h2>
+En JavaScript disponemos de los operadores lógicos habituales en lenguajes de programación como son “es igual”, “es distinto”, menor, menor o igual, mayor, mayor o igual, and (y), or (o) y not (no). La sintaxis se basa en símbolos como veremos a continuación y cabe destacar que hay que prestar atención a no confundir = = con = porque implican distintas cosas.<br><br>
+<table width="300" border="1" cellpadding="15">
+  <center><tbody>
+    <tr>
+      <th scope="col">Operadores lógicos y relacionales</th>
+      <th scope="col">Descripcón</th>
+      <th scope="col">Ejemplo</th>
+    </tr>
+    <tr>
+      <td>= =</td>
+      <td>Es igual</td>
+      <td>a = = b</td>
+    </tr>
+    <tr>
+      <td>= = =</td>
+      <td>Es ectrictamente igual</td>
+      <td>a = = = b</td>
+    </tr>
+    <tr>
+      <td>!=</td>
+      <td>Es distinto</td>
+      <td>a != b</td>
+    </tr>
+    <tr>
+      <td>!= =</td>
+      <td>Es esctrictamente distinto</td>
+      <td>a ! = = b</td>
+    </tr>
+    <tr>
+      <td><text>\, -\, /, -/</text></td>
+      <td>Menor, menos o igual, mayor, mayor o igual</td>
+      <td>a -\ b</td>
+    </tr>
+    <tr>
+      <td># #</td>
+      <td>Operador and</td>
+      <td>a # # b</td>
+    </tr>
+    <tr>
+      <td>| |</td>
+      <td>Operador or</td>
+      <td>a |  | b</td>
+    </tr>
+    <tr>
+      <td>!</td>
+      <td>Operador not</td>
+      <td>!a</td>
+    </tr>
+  </tbody></center>
+</table>
+	
+<h2>Condicionales</h2>
+La instrucción if … else funciona de forma análoga a como lo hace en otros lenguajes de programación. Permite controlar qué procesos tienen lugar, típicamente en función del valor de una o varias variables, de un valor de cálculo o booleano, o de las decisiones del usuario. La sintaxis a emplear es:<br><br>
+
+<center><img src="../IMG/condicional.png"width="730" height="350"></center><br>
+
+La cláusula else (no obligatoria) sirve para indicar instrucciones a realizar en caso de no cumplirse la condición. JavaScript admite escribir un else y dejarlo vacío: else { }. El else vacío se interpreta como que contemplamos el caso pero no hacemos nada en respuesta a él. Un else vacío no tiene ningún efecto y en principio carece de utilidad, no obstante a veces es usado para remarcar que no se ejecuta ninguna acción cuando se alcanza esa situación.<br><br>
+
+Cuando se quieren evaluar distintas condiciones una detrás de otra, se usa la expresión else if { }. En este caso no se admite elseif todo junto como en otros lenguajes. De este modo, la evaluación que se produce es: si se cumple la primera condición, se ejecutan ciertas instrucciones; si no se cumple, comprobamos la segunda, tercera, cuarta… n condición. Si no se cumple ninguna de las condiciones, se ejecuta el else final en caso de existir.<br><br>
+
+La expresión dentro de paréntesis es una expresión booleana. Llamamos expresión booleana a una expresión que solo tiene dos valores posibles: verdadero (true) o falso (false).<br><br>
+
+Es importante distinguir la comparación que realizamos con el operador = = de la asignación que realizamos con el operador =. Confundirlos nos generará errores que harán que el código JavaScript no se ejecute o problemas de lógica en el código. Recuerda que siempre que tengas que comparar con un operador, has de usar = = ó = = = en lugar de =.<br><br>
+
+La condición a evaluar puede ser un simple nombre de variable. Por ejemplo:<br><br>
+
+if (antiop) {alert ('nombre se evaluó a verdadero');}<br><br>
+
+En este caso se comprueba el valor booleano (o equivalente booleano) de antiop. Si nombre es de tipo String y es la cadena vacía, su valor equivalente es falso y no se ejecutarán las instrucciones dentro del if. Si  antiop es un número se considera que equivale a false si su valor numérico es 0, o que equivale a true si su valor numérico es distinto de cero (incluido NaN). Para cadenas de texto, la cadena vacía se considera equivale a false y cualquier otra cadena se considera que equivale a true.<br><br>
+
+Se admite omitir las llaves después de la condición si solo se va a incluir una sentencia a ejecutar. Por ejemplo: if (nombre) alert ('nombre se evaluó a verdadero');<br><br>
+
+Sin embargo, recomendamos incluir las llaves siempre después de un if porque hace el código más fácil de seguir y más claro.<br>
+<h2>Estructuras Selectivas</h2>
+Las estructuras selectivas se utilizan para tomar decisiones lógicas; de ahí que se suelan denominar también estructuras de decisión o alternativas. En las estructuras selectivas se evalúa una condición y en función del resultado de la misma se realiza una opción u otra. Las condiciones se especifican usando expresiones lógicas.<br><br>
+
+La representación de una estructura selectiva se hace con palabras en pseudocódigo (if, then, else o bien en español si, entonces, si_no), o con una figura geométrica en forma de rombo. Las estructuras selectivas o alternativas pueden ser: simples, dobles, múltiples.<br><br>
+	
+	
+<center><img src="../IMG/segun_sea.png"width="700" height="300"></center>
+	
+<h2>Estructuras Repetitivas</h2>
+Las estructuras selectivas son aquellas que dirigen la ejecución de un programa hacia un grupo de sentencias del resultado de la condición. La estructura selectiva simple es aquella que evalua la condición, por verdadera ejecuta una instrucción y si es falsa no ejecuta ninguna instrucción.<br>
+
+
+	
+<h3>Mientras</h3>
+La estructura repetitiva mientras es aquella en que el cuerpo del bucle se repite mientras se cumple una determinada condición. cuando se ejecuta la instrucción mientras, la primea cosa que sucede es que se evalúa la condición. si se evalúa falsa, no se toma ninguna acción y el programa prosigue en la siguiente instrucción del bucle. si la expresión booleana es verdadera, entonces se ejecuta el cuerpo del bucle, después de lo cual se evalúa de nuevo la expresión boolena. este proceso se repite una y otra vez mientras la expresión booleana sea verdadera.<br>
+	
+<ul>
+<li>Se evalúa la condicional que existe dentro del ciclo while, en caso de que la condición sea verdadera va al #2; en caso de que la Condicional sea falsa va al #3.</li><br>
+<li>Ejecuta las instrucciones de la Parte Verdadera y vuelve al #1.</li><br>
+<li>Termina el ciclo while y continua la secuencia del programa.</li>
+</ul>
+	
+<center><img src="../IMG/mientrasd.jpg" width="590" height="350"></center>
+	
+<h3>Hacer - mientras</h3>
+Al igual que en la estructura while las instrucciones se ejecutan mientras la condición sea verdadera, pero la condición se comprueba al final del ciclo, por lo que las instrucciones se ejecutarán al menos una vez.
+
+<ul>
+<li>Ejecuta las instrucciones que hay dentro del ciclo do – while y va al #2.</li><br>
+<li>Evalúa condición del ciclo do –while, caso de que la condición sea verdadera retorna al #1; en caso de que la condición sea falsa va al #3.</li><br>
+<li>Termina el Ciclo do - while y continua la secuencia del programa.</li>
+</ul>
+	
+<center><img src="../IMG/mientras.jpg" width="600" height="300"></center>
+	
+<h3>Para</h3>
+Esta estructura permite ejecutar una serie de instrucciones un número determinado de veces.<br>
+	
+<ul>
+<li>Iniciativa de una variable declarada que permite controlar el ciclo (inicialización).</li><br>
+<li>Se evalúa la condición y si es verdadera va al #3, si la condición es falsa va al #5.</li><br>
+<li>Ejecuta las instrucciones que hay dentro del ciclo.</li><br>
+<li>Incrementa la variable que controla el ciclo y retorna al #2.</li><br>
+<li>Termina el Ciclo for y continua la secuencia del programa.</li>
+</ul>
+	
+<center><img src="../IMG/Para.png" width="590" height="300"></center><br>
+	
+</body>
+</html>

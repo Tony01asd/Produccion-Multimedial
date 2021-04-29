@@ -1,0 +1,50 @@
+@charset "utf-8";
+{padding:25px 50px 75px 100px
+}
+{
+    margin: 20%;
+    /maren/
+    padding: 20%;
+    /relleno/
+}
+
+#nav {
+    height: 57px;
+   
+    background-color: #2e272d;
+  
+    text-align: center;
+    margin-top: 0%;
+   
+}
+#nav ul {
+    list-style: none;
+    /tipo de lista.. horizontal, o vertical/
+    display: inline-block;
+    /* se mueve o no*/
+}
+#nav ul li {
+    float: left;
+    /posicion de elemento/
+    margin-top: 17px;
+}
+
+#nav ul li a {
+    color: white;
+    font-weight: bold;
+    /colo de letra.. este es para el menu/
+    text-decoration: none;
+    /cuando pondes un link deja una linea, este quita la lineea esa/
+    font-size: 17px;
+    padding: 20px;
+}
+p{
+	padding-top: 16px;
+	padding-right: 20px;
+	padding-bottom: 25px;
+	padding-left: 18px;
+}
+h2{
+	color:f00;
+}
+
